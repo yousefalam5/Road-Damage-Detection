@@ -1,0 +1,50 @@
+[
+  {
+    "run_name": "YOLOv8n_tune_lr0p001_wd0p0005_mo0p937",
+    "model": "YOLOv8n",
+    "params": {
+      "lr0": 0.001,
+      "weight_decay": 0.0005,
+      "momentum": 0.937
+    },
+    "map50": 0.0001,
+    "train_time_s": 223.7,
+    "metrics": {
+      "metrics/mAP50(B)": 0.0001,
+      "metrics/precision(B)": 0.00051,
+      "metrics/recall(B)": 0.00914
+    }
+  },
+  {
+    "run_name": "YOLOv8n_tune_lr0p01_wd0p0005_mo0p937",
+    "model": "YOLOv8n",
+    "params": {
+      "lr0": 0.01,
+      "weight_decay": 0.0005,
+      "momentum": 0.937
+    },
+    "map50": 8e-05,
+    "train_time_s": 225.1,
+    "metrics": {
+      "metrics/mAP50(B)": 8e-05,
+      "metrics/precision(B)": 0.00045,
+      "metrics/recall(B)": 0.0082
+    }
+  },
+  {
+    "run_name": "YOLOv8n_tune_lr0p0001_wd0p001_mo0p9",
+    "model": "YOLOv8n",
+    "params": {
+      "lr0": 0.0001,
+      "weight_decay": 0.001,
+      "momentum": 0.9
+    },
+    "map50": 4e-05,
+    "train_time_s": 222.9,
+    "metrics": {
+      "metrics/mAP50(B)": 4e-05,
+      "metrics/precision(B)": 0.00021,
+      "metrics/recall(B)": 0.0053
+    }
+  }
+]

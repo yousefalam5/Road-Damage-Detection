@@ -1,0 +1,4 @@
+run_name,map50,map50_95,precision,recall,fps_cpu,ms_per_img,model_size_mb
+YOLO26n_default,0.0001,0.0000,0.0009,0.0357,1.7600,566.8600,5.1600
+YOLOv11n_default,0.0000,0.0000,0.0001,0.0174,0.7400,1350.7000,5.2000
+YOLOv8n_default,0.0000,0.0000,0.0005,0.0091,0.7700,1297.0400,6.1500
