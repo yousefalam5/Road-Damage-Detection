@@ -1,0 +1,54 @@
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+ALERTS_DIR = BASE_DIR / "alerts"
+SCREENSHOT_DIR = ALERTS_DIR / "screenshots"
+DB_PATH = ALERTS_DIR / "alerts.db"
+
+POSE_MODEL = "yolov8n-pose.pt"
+OBJECT_MODEL = "yolov8n.pt"
+TRACKER = "botsort.yaml"
+DEVICE = None
+IMG_SIZE = 640
+PROCESS_EVERY_N_FRAMES = 2
+
+PERSON_CONF = 0.35
+PHONE_CONF = 0.30
+PHONE_CLASS_ID = 67
+PHONE_BOX_MARGIN = 0.20
+PHONE_CONFIRM_FRAMES = 3
+
+HEAD_TURN_RATIO = 0.30
+YAW_THRESHOLD = 0.12
+HEAD_TURN_SECONDS = 1.0
+TURN_WINDOW_SECONDS = 6.0
+KEYPOINT_MIN_SCORE = 0.5
+FACE_MIN_SCORE = 0.40
+MIN_SHOULDER_WIDTH_PX = 12
+MIN_EYE_DIST_PX = 6
+SHOW_DEBUG = True
+BASELINE_SECONDS = 30.0
+BASELINE_MIN_SAMPLES = 12
+MIN_RELATIVE_HEIGHT = 0.45
+REQUIRE_NEIGHBOR_DIRECTION = True
+NEIGHBOR_MAX_WIDTHS = 3.0
+
+GAZE_ENABLED = True
+GAZE_THRESHOLD = 0.05
+GAZE_MODEL_URL = "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task"
+GAZE_MODEL_PATH = BASE_DIR / "models" / "face_landmarker.task"
+
+ALERT_COOLDOWN_SECONDS = 15.0
+RED_HOLD_SECONDS = 3.0
+
+CUSTOM_MODEL = None
+CUSTOM_CONF = 0.40
+CUSTOM_CHEAT_CLASSES = None
+
+GREEN = (0, 200, 0)
+RED = (0, 0, 255)
+ORANGE = (0, 165, 255)
+
+FIREBASE_ENABLED = False
+FIREBASE_CREDENTIALS = BASE_DIR / "firebase_key.json"
+FIREBASE_STORAGE_BUCKET = "your-project-id.appspot.com"
